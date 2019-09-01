@@ -3,6 +3,7 @@
 }
 
 html {
+	margin: 0;
 	font-family: 'Yu Mincho', YuMincho, 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'HGP明朝B', serif;
   	-webkit-font-feature-settings: 'pkna';
         font-feature-settings: 'pkna';
@@ -22,8 +23,23 @@ ul {
 	padding-left: 0;
 }
 
+.container {
+	max-width: 1170px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
 .tatetitle {
 	writing-mode: vertical-rl;
+}
+
+.clear {
+  clear:left;
+}
+
+h3 {
+	font-size: 25px;
 }
 
 
@@ -38,12 +54,12 @@ header .container-left {
 	float: left;
 	background-color: white;
 	height: 677px;
-	width: 630px;
+	width: 40%;
 	margin: 0 auto;
 }
 .container-right img {
 	height: 677px;
-	width: 700px;
+	width: 60%;
 }
 
 .header-title {
@@ -52,6 +68,13 @@ header .container-left {
 	margin: 0 auto;
 }
 
+.header-title h1{
+	font-size: 40px;
+}
+
+.header-title h2{
+	font-size: 30px;
+}
 
 .header-sns {
 	padding-top: 20px;
@@ -73,10 +96,11 @@ header .container-left {
 }
 
 .header-list {
-	padding-top: 40px;
+	padding-top: 10px;
 	margin: 0 auto;
 	width: 60%;
 	text-align: center;
+	font-size: 18px;
 }
 
 .header-list ul {
@@ -92,14 +116,12 @@ header .container-left {
 
 
 
-
-
 /* 店舗について */
 .contents-about {
-	height: 600px;
-	width: 100%;
-	padding-top: 120px;
-	padding-bottom: 60px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 5%;
+	padding-right: 5%;
 	text-align: center;
 }
 
@@ -108,7 +130,7 @@ header .container-left {
 }
 
 .about-text {
-	width: 70%;
+	width: 80%;
 	writing-mode: vertical-rl;
 	column-count: 1;
 	column-gap: 100px;
@@ -124,13 +146,13 @@ header .container-left {
 }
 
 
+
 /* 商品一覧 */
 .contents-itemlist {
-	background-color pink;
-	width :100%;
-	height: 700px;
 	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-bottom: 80px;
+	padding-left: 5%;
+	padding-right: 5%;
 	text-align: center;
 }
 
@@ -138,29 +160,23 @@ header .container-left {
 	float: right;
 }
 
-.item-list {
-	writing-mode: vertical-rl;
-	width: 70%;
-	margin: 0 auto;
-	font-size: 18px;
-	//padding-right: 20px;
-	//padding-left: 20px;
-
-}
-
 .contents-item {
-	padding: 40px;
+	writing-mode: vertical-rl;
+	position: relative;
 	float: left;
+	padding-bottom: 5%;
+	width: 40%;
 }
 
 
 /* instagram */
 .contents-instagram {
-	width: 100%;
-	background-color: #eeeeee;
-	height: 400px;
 	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-bottom: 80px;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: #f7f7f7;
+	text-align: center;
 }
 
 
@@ -172,36 +188,31 @@ header .container-left {
 
 .instaram-title {
 	float: right;
-	padding-right: 50px;
 	padding-left: 50px;
 }
 
 .instagram-item-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	flex-direction: row;
-	align-items: stretch;
-	align-items: center;
-	width: 70%;
-	margin: 0 auto;
-	float: right;
+
 }
 
 .instagram-item {
-	//width: 20%;
-	//padding-right: 15px;
-	//padding-left: 15px;
+	float: left;
+	width: 20%;
+}
+
+.instagram-img {
+	position: relative;
 }
 
 
 /* 店舗情報 */
 .contents-storeinfo {
-	height: 850px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 5%;
+	padding-right: 5%;
 	width: 100%;
 	margin: 0 auto;
-	padding-top: 60px;
-	padding-bottom: 60px;
 }
 
 .contents-storeinfo h3{
@@ -235,10 +246,10 @@ header .container-left {
 
 /* お知らせ */
 .contents-newslist {
-	height: 600px;
-	width: 100%;
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .contents-newslist h3{
@@ -278,6 +289,7 @@ header .container-left {
 .btn:hover {
 	opacity: 1;
 }
+
 
 
 /* フッター */
@@ -347,18 +359,42 @@ footer {
 }
 
 
-/* タブレット向けレイアウト 
+/* タブレット向けレイアウト */
 @media(max-width: 1000px){
-	.contents-item {
+	.instagram-item {
 		width:50%;
-		margin-bottom: 50px;
-  	}
+		marin-bottom 50px;
+	}
+	.contents-item {
+		width: 50%;
+	}
+	.btn {
+		width: 100%;
+	}
+	.about-text {
+		writing-mode: horizontal-tb;
+	}
+	.news-list {
+		width: 100%;
+	}
 }
 
 
-/* スマートフォン向けレイアウト 
+/* スマートフォン向けレイアウト */
 @media(max-width: 670px){
-  .contents-item {
+  .instagram-item {
     width:100%;
+  }
+  .contents-item {
+	width:100%;
+  }
+  .btn {
+	width: 100%;
+  }
+  .about-text {
+	writing-mode: horizontal-tb;
+  }
+  .news-list {
+	width: 100%;
   }
 }
