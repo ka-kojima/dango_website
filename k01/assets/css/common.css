@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -38,7 +40,7 @@ ul {
   clear:left;
 }
 
-h3 {
+h2 {
 	font-size: 25px;
 }
 
@@ -48,6 +50,83 @@ h3 {
 
 header {
 	width: 100%;
+}
+#nav-drawer {
+  position: relative;
+  display: none;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;/*線の太さ*/
+  width: 25px;/*長さ*/
+  border-radius: 3px;
+  background: #555;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top: 0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;/*最前面に*/
+  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 330px;/*最大幅（調整してください）*/
+  height: 100%;
+  background: #fff;/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
 
 header .container-left {
@@ -72,8 +151,9 @@ header .container-left {
 	font-size: 40px;
 }
 
-.header-title h2{
+.header-title .sub-title{
 	font-size: 30px;
+	
 }
 
 .header-sns {
@@ -125,7 +205,7 @@ header .container-left {
 	text-align: center;
 }
 
-.contents-about h3{
+.contents-about h2{
 	float: right;
 }
 
@@ -156,7 +236,7 @@ header .container-left {
 	text-align: center;
 }
 
-.contents-itemlist h3 {
+.contents-itemlist h2 {
 	float: right;
 }
 
@@ -166,6 +246,7 @@ header .container-left {
 	float: left;
 	padding-bottom: 5%;
 	width: 40%;
+	font-size: 20px;
 }
 
 
@@ -180,7 +261,7 @@ header .container-left {
 }
 
 
-.contents-instagram h3 {
+.contents-instagram h2 {
 	//width: 30%;
 	//float: right;
 	//padding: 10px;
@@ -215,7 +296,7 @@ header .container-left {
 	margin: 0 auto;
 }
 
-.contents-storeinfo h3{
+.contents-storeinfo h2{
 	float: right;
 }
 
@@ -252,7 +333,7 @@ header .container-left {
 	padding-right: 5%;
 }
 
-.contents-newslist h3{
+.contents-newslist h2{
 	float: right;
 }
 
@@ -269,6 +350,7 @@ header .container-left {
 
 .contents-news {
 	border-bottom: 2px solid #dee7ec;
+	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 10px;
 }
@@ -279,10 +361,9 @@ header .container-left {
 	border: 0.5px solid #dee7ec;
 	text-align: center;
 	opacity: 0.8;
-	width: 30%;
-	margin: 0 auto;
+	width: 50%;
+	margin: 15px auto;
 	padding: 10px;
-	margin-top: 80px;
 	font-size: 18px;
 }
 
@@ -294,12 +375,13 @@ header .container-left {
 
 /* フッター */
 footer {
-	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 5%;
+	padding-right: 5%;
 	background-color: gray;
 	color: white;
-	height: 160px;
 	text-align: center;
-	margin-top: 60px;
 }
 
 .page-top-btn {
@@ -373,6 +455,8 @@ footer {
 	}
 	.about-text {
 		writing-mode: horizontal-tb;
+		width: 100%;
+		height: 500px;
 	}
 	.news-list {
 		width: 100%;
@@ -393,8 +477,19 @@ footer {
   }
   .about-text {
 	writing-mode: horizontal-tb;
+	width: 100%;
+	height: 500px;
   }
   .news-list {
 	width: 100%;
+  }
+  .header-list {
+  	display: none;
+  }
+  #nav-drawer {
+  	display: block;
+  }
+  .footer-list {
+  	display: none;
   }
 }

@@ -10,10 +10,15 @@
 	<body>
 		<header>
 			<div class="container">
+			<div id="nav-drawer">
+			<input id="nav-input" type="checkbox" class="nav-unshown">
+			<label id="nav-open" for="nav-input"><span></span></label>
+			<label class="nav-unshown" id="nav-close" for="nav-input"></label>
+			<div id="nav-content">ここに中身を入れる</div>
+			</div>
 			<div class="container-left">
 				<div class="header-title">
-					<h2>創業○○年</h2>
-					<h1>○○専門店　店舗名</h1>
+					<h1><span class="sub-title">創業○○年</span><br>○○専門店　店舗名</h1>
 				</div>
 				<div class="header-sns">
 					<ul>
@@ -43,7 +48,7 @@
 		<div class="main">
 			<div id="contents-about" class="contents-about">
 				<div class="container">
-				<h3 class="tatetitle">店舗について</h3>
+				<h2 class="tatetitle">店舗について</h2>
 				<div class="about-text">
 					<p>サンプルテキストサンプルテキスト</p>
 					<p>サンプルテキストサンプルテキストサンプルテキスト</p>
@@ -58,7 +63,7 @@
 
 			<div id="contents-itemlist" class="contents-itemlist">
 				<div class="container">
-				<h3 class="tatetitle">商品一覧</h3>
+				<h2 class="tatetitle">商品一覧</h2>
 				<div class="item-list">
 					<div class="contents-item">
 						<p>サンプルタイトル</p>
@@ -84,7 +89,7 @@
 			<div id="contents-instagram" class="contents-instagram">
 				<div class="container">
 				<div class="instaram-title">
-					<h3>instagram</h3>
+					<h2>instagram</h2>
 					<p><a href="#">#tenpo_name</a></p>
 				</div>
 				<div class="instagram-item-list">
@@ -99,7 +104,7 @@
 
 			<div id="contents-storeinfo" class="contents-storeinfo">
 				<div class="container">
-				<h3 class="tatetitle">店舗情報</h3>
+				<h2 class="tatetitle">店舗情報</h2>
 				<div class="store-info">
 					<div class="store-text">
 						<p>〒000-000</p>
@@ -117,7 +122,7 @@
 
 			<div id="contents-newslist" class="contents-newslist">
 				<div class="container">
-				<h3 class="tatetitle">お知らせ</h3>
+				<h2 class="tatetitle">お知らせ</h2>
 				<div class="news-list">
 					<p class="contents-news news-top">2019-01-01　　　　サンプルタイトルサンプルタイトル</p>
 					<p class="contents-news">2019-01-01　　　　サンプルタイトルサンプルタイトル</p>
