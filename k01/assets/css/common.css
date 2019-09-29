@@ -316,7 +316,6 @@ header {
 .store-pic {
 	float: right;
 	width: 50%;
-	//padding-right: 20px;
 }
 
 .map-pic {
@@ -370,6 +369,117 @@ header {
 
 .btn:hover {
 	opacity: 1;
+}
+
+
+/* 商品詳細 */
+.contents-itemdetail {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: center;
+}
+
+.contents-itemdetail h2 {
+	float: right;
+}
+
+.contents-itemtext {
+	padding: 15px;
+}
+
+.page-next {
+	float: right;
+}
+
+.page-next p{
+	;
+}
+
+.page-prev {
+	float: left;
+}
+
+/* ページャー */
+.pager .pagination {
+   text-align: right;
+}
+
+.pager .pagination li {
+  display: inline;
+  margin: 0 2px;
+  padding: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.pager .pagination li.pre,
+.pager .pagination li.next{
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+}
+
+
+/* お知らせ詳細 */
+.contents-newsdetaill {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left;
+}
+
+.contents-newstext-title {
+	text-align: left;
+	padding-bottom: 15px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.contents-newstext {
+	width: 80%;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left;
+	margin: 0 auto;
+	border-top: 2px solid #dee7ec;
+	border-bottom: 2px solid #dee7ec;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+.contents-newsdetaill h2{
+	float: right;
+}
+
+.contents-newsdetaill .pagination li {
+  display: inline;
+  margin: 0 2px;
+  padding: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.page-prev-text {
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
+.page-next-text {
+	padding-right: 10px;
+	padding-bottom: 100px;
 }
 
 
@@ -440,7 +550,9 @@ footer {
 	width: 70%;
 	margin: 0 auto;
 }
-
+.cb {
+	clear: both;
+}
 
 /* タブレット向けレイアウト */
 @media(max-width: 1000px){
@@ -505,12 +617,52 @@ footer {
 	background-color: rgba(255,255,255,0.7);
 	height: 500px;
   }
+	.contents-newslist h2{
+		width: 100%;
+		text-align: center;
+	}
   #nav-drawer {
   	display: block;
   }
+  .store-info {
+	width: 100%;
+   }
+	.store-text {
+		width: 100%;
+	}
+	.store-pic {
+		width: 100%;
+	}
   .footer-list {
   	display: none;
   }
+  .page-top-btn {
+  	margin: 5 auto;
+  	float: none;
+  }
+	.contents-newslist h2{
+		margin: 0 auto;
+		float: none;
+	}
+  .pager .pagination li{
+    display: none;
+  }
+
+  .pager .pagination li.pre,
+  .pager .pagination li.next{
+    display: inline-block;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+  }
+
+  .pager .pagination li.pre a,
+  .pager .pagination li.next a{
+    width: 100%;
+    text-align: center;
+  }
+
+
 }
 
 @media only screen and (max-width: 480px) {
