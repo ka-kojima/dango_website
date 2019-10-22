@@ -260,7 +260,20 @@ header {
 	flex: auto;
   width: 40%;
 	font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+.contents-item p {
+  margin-bottom: 50px;
+}
+
+.item-image {
+  position: relative;
+}
+
+.yajirushi {
+  position: absolute;
+  top: 150px;
+  left: 150px;
 }
 
 
