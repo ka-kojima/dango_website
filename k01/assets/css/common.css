@@ -28,7 +28,6 @@ ul {
 .container {
 	max-width: 1170px;
 	width: 100%;
-	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -48,10 +47,6 @@ ul {
 
 .tatetitle {
 	writing-mode: vertical-rl;
-}
-
-.clear {
-  clear:left;
 }
 
 h2 {
@@ -247,13 +242,20 @@ header {
 	float: right;
 }
 
+.item-list {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
 .contents-item {
 	writing-mode: vertical-rl;
-	position: relative;
-	float: left;
-	padding-bottom: 5%;
-	width: 40%;
+	flex: auto;
+  width: 40%;
 	font-size: 20px;
+  margin-bottom: 10px;
 }
 
 
@@ -269,20 +271,18 @@ header {
 
 .instaram-title {
 	float: right;
-	padding-left: 50px;
 }
 
 .instagram-item-list {
-
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .instagram-item {
-	float: left;
-	width: 20%;
-}
-
-.instagram-img {
-	position: relative;
+  flex: auto;
+  width: 25%;
 }
 
 
@@ -547,9 +547,11 @@ footer {
 
 /* タブレット向けレイアウト */
 @media(max-width: 1000px){
+  .instagram-item-list {
+    flex-wrap: wrap;
+  }
 	.instagram-item {
-		width:50%;
-		marin-bottom 50px;
+		width: 50%;
 	}
 	.contents-item {
 		width: 50%;
@@ -570,22 +572,28 @@ footer {
 
 /* スマートフォン向けレイアウト */
 @media(max-width: 670px){
+  .instagram-item-list {
+    flex-wrap: wrap;
+  }
+  .item-list {
+    flex-direction: column;
+  }
   .instagram-item {
-    width:100%;
+    width: 50%;
   }
   .contents-item {
-	width:100%;
+	  width:100%;
   }
   .btn {
-	width: 100%;
+	  width: 100%;
   }
   .about-text {
-	writing-mode: horizontal-tb;
-	width: 100%;
-	height: 500px;
+	  writing-mode: horizontal-tb;
+	  width: 100%;
+	  height: 500px;
   }
   .news-list {
-	width: 100%;
+	  width: 100%;
   }
   header {
   	height: 450px;
