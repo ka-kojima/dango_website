@@ -46,7 +46,12 @@ ul {
 }
 
 .tatetitle {
+  padding-top: 25px;
 	writing-mode: vertical-rl;
+  background-image: url(../img/title_img.png);
+  background-repeat: no-repeat;
+  background-position: 13px 0px;
+  line-height: 100px
 }
 
 h2 {
