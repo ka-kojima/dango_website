@@ -22,11 +22,11 @@ li {
 
 ul {
 	list-style-type: none;
-	padding-left: 0;
+  padding-left: 0;
 }
 
 .container {
-	max-width: 1170px;
+	//max-width: 1170px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -212,10 +212,6 @@ header {
 
 
 /* 店舗について */
-.contents-about {
-
-}
-
 .contents-about h2{
 	float: right;
 }
@@ -342,8 +338,25 @@ header {
   text-align: left;
 }
 
+.contents-news-img {
+  padding: 0px 10px 0px 10px;
+}
+
+.news-img-right {
+  float: right;
+  padding-right: 20px;
+}
+
+.news-text {
+  float: right;
+}
+
 .contents-newslist h2{
 	float: right;
+}
+
+.title-text {
+  display: inline-block;
 }
 
 .news-top {
@@ -352,16 +365,19 @@ header {
 }
 
 .news-list {
-	width: 70%;
+	width: 60%;
 	margin: 0 auto;
-	padding: 15px;
+	padding-bottom: 54px;
+}
+.news-detail-list {
+  margin-top: 84px;
 }
 
 .contents-news {
 	border-bottom: 2px solid #dee7ec;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 10px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 15px;
 }
 
 .btn {
@@ -380,13 +396,15 @@ header {
 	opacity: 1;
 }
 
+.contents-header {
+  height: 140px;
+  padding-top: 44px;
+  padding-bottom: 8px;
+  text-align: center;
+}
 
 /* 商品詳細 */
 .contents-itemdetail {
-	padding-top: 80px;
-	padding-bottom: 80px;
-	padding-left: 5%;
-	padding-right: 5%;
 	text-align: center;
 }
 
@@ -396,32 +414,43 @@ header {
 
 .contents-itemtext {
 	padding: 15px;
+  width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.page-link {
+  height: 100px;
 }
 
 .page-next {
+  padding: 25px 50px;
+  background-image: url(../img/yajirusi_right.png);
+  background-repeat: no-repeat;
 	float: right;
-}
-
-.page-next p{
-	;
+  background-position: 110px 12px;
 }
 
 .page-prev {
+  padding: 25px 50px;
+  background-image: url(../img/yajirusi_left.png);
+  background-repeat: no-repeat;
+  background-position: 0px 12px;
 	float: left;
 }
 
 /* ページャー */
 .pager .pagination {
    text-align: right;
+   padding-top: 50px;
+   padding-bottom: 152px;
 }
 
 .pager .pagination li {
-  display: inline;
   margin: 0 2px;
   padding: 0;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 10px;
   text-align: center;
   position: relative;
 }
@@ -429,14 +458,14 @@ header {
 .pager .pagination li.pre,
 .pager .pagination li.next{
   display: inline-block;
-  width: 100px;
-  height: 50px;
+  width: 20px;
   text-align: center;
 }
 
 
 /* お知らせ詳細 */
 .contents-newsdetaill {
+  font-size: 18px;
 	padding-top: 80px;
 	padding-bottom: 80px;
 	padding-left: 5%;
@@ -471,7 +500,6 @@ header {
 }
 
 .contents-newsdetaill .pagination li {
-  display: inline;
   margin: 0 2px;
   padding: 0;
   display: inline-block;
@@ -495,13 +523,11 @@ header {
 
 /* フッター */
 footer {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	padding-left: 5%;
-	padding-right: 5%;
+  height: 160px;
 	background-color: gray;
 	color: white;
 	text-align: center;
+  margin: 0 auto;
 }
 
 .page-top-btn {
@@ -515,49 +541,41 @@ footer {
 }
 
 .page-top-btn p{
-	margin-top: 0px;
 	display: block;
 	font-size: 14px;
 }
 
-.footer-title h4 {
-	padding-top: 5px;
-	padding-bottom: 10pxs;
-	width: 70%;
-	margin: 0 auto;
+.footer-title {
+  font-size: 20px;
+  padding-top: 20px;
 }
 
 .footer-sns ul {
-	padding-top: 5px;
-	width: 70%;
-	text-align: center;
-	margin: 0 auto;
+	padding-top: 14px;
+  margin: 0 auto;
 }
 
 .footer-sns li {
-	width: 50px;
-	height: 50px;
-	padding: 5px;
-	display: inline;
+	padding-right: 2.5px;
+  padding-left: 2.5px;
+  display: inline-block;
 }
 
 .footer-list ul {
-	width: 70%;
-	text-align: center;
-	margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .footer-list li {
-	width: 50px;
-	height: 50px;
-	padding: 10px;
-	display: inline;
+  font-size: 16px;
+	padding-right: 5px;
+  padding-left: 5px;
+	display: inline-block;
 }
 
 .copyright {
 	font-size: 10px;
-	width: 70%;
-	margin: 0 auto;
+  padding-bottom: 8px;
 }
 .cb {
 	clear: both;
@@ -642,8 +660,8 @@ footer {
   	display: block;
   }
   .store-info {
-	width: 100%;
-   }
+	  width: 100%;
+  }
 	.store-text {
 		width: 100%;
 	}
@@ -656,6 +674,12 @@ footer {
   .page-top-btn {
   	margin: 5 auto;
   	float: none;
+  }
+  .tatetitle {
+    display: inline-block;
+  	margin: 0 auto;
+  	float: none;
+    text-align: center;
   }
 	.contents-newslist h2{
 		margin: 0 auto;
@@ -678,7 +702,9 @@ footer {
     width: 100%;
     text-align: center;
   }
-
+  footer {
+    height: 200px;
+  }
 
 }
 
