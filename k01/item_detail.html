@@ -6,16 +6,27 @@
 		<title>商品ページ</title>
 		<link rel="stylesheet" href="assets/css/common.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/swiper.css">
 	</head>
 	<body>
 		<header class="contents-header">
 			<a href="index.html"><img src="assets/img/main-logo.png"></a>
 		</header>
-		<div class="main">
-			<div id="contents-itemdetail" class="contents-itemdetail contents">
-				<div class="container">
+
+		<main>
+			<div id="contents-itemdetail" class="contents-itemdetail contents clearfix">
+				<div class="itemdetail-main">
 					<h2 class="tatetitle">サンプルタイトル</h2>
-					<img class="item-pic" src="assets/img/item_1.png" alt="商品画像">
+					<div class="item-pic">
+						<div class="swiper-container">
+						  <div class="swiper-wrapper">
+						    <div class="swiper-slide"><img src="assets/img/item_1.png" alt="商品画像1"></div>
+						    <div class="swiper-slide"><img src="assets/img/item_1.png" alt="商品画像2"></div>
+						    <div class="swiper-slide"><img src="assets/img/item_1.png" alt="商品画像3"></div>
+						  </div>
+						  <div class="swiper-pagination"></div>
+						</div>
+				  </div>
 					<div class="contents-itemtext">
 						<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
 						<p>サンプルテキストサンプルテキストサンプルテキストサンプルテキスト</p>
@@ -29,37 +40,53 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 
+		<footer>
+			<div class="container">
+				<a class="page-top-btn clearfix" href="#">
+					<img src="assets/img/btn.png" alt="btn">
+					<p>PAGE TOP</p>
+				</a>
 
-
-				<footer>
-					<div class="container clearfix">
-						<a class="page-top-btn" href="#">
-							<img src="assets/img/btn.png" alt="btn">
-							<p>PAGE TOP</p>
-						</a>
-						<div class="footer-title">
-								<h4><a href="index.html#">○○専門店　店舗名</a></h4>
-						</div>
-						<div class="footer-sns">
-							<ul>
-								<li><a href="#"><img src="assets/img/instagram_logo.png" alt="instagram"></a></li>
-								<li><a href="#"><img src="assets/img/facebook_logo.png" alt="facebook"></a></li>
-								<li><a href="#"><img src="assets/img/twitter_logo.png" alt="twitter"></a></li>
-							</ul>
-						</div>
-						<div class="footer-list">
-							<ul>
-								<li><a href="#contents-about">店舗について</a></li>
-								<li><a href="#contents-itemlist">商品一覧</a></li>
-								<li><a href="#contents-instagram">instagram</a></li>
-								<li><a href="#contents-storeinfo">店舗情報</a></li>
-								<li><a href="#contents-newslist">お知らせ</a></li>
-							</ul>
-						</div>
-						<p class="copyright">copyrignt</p>
+			  <div class="footer-main">
+					<div class="footer-title">
+							<h4><a href="index.html#">○○専門店　店舗名</a></h4>
 					</div>
-				</footer>
-			</body>
-		</html>
+					<div class="footer-sns">
+						<ul>
+							<li><a href="#"><img src="assets/img/instagram_logo.png" alt="instagram"></a></li>
+							<li><a href="#"><img src="assets/img/facebook_logo.png" alt="facebook"></a></li>
+							<li><a href="#"><img src="assets/img/twitter_logo.png" alt="twitter"></a></li>
+						</ul>
+					</div>
+					<div class="footer-list">
+						<ul>
+							<li><a href="index.html#contents-about">店舗について</a></li>
+							<li><a href="index.html#contents-itemlist">商品一覧</a></li>
+							<li><a href="index.html#contents-instagram">instagram</a></li>
+							<li><a href="index.html#contents-storeinfo">店舗情報</a></li>
+							<li><a href="index.html#contents-newslist">お知らせ</a></li>
+						</ul>
+					</div>
+					<p class="copyright">copyrignt</p>
+			  </div>
+			</div>
+		<script src="assets/js/swiper.js"></script>
+		<script>
+		var swiper = new Swiper('.swiper-container', {
+		  navigation: {
+		    nextEl: '.swiper-button-next',
+		    prevEl: '.swiper-button-prev',
+		  },
+		  loop: true,
+		  pagination: {
+		      el: '.swiper-pagination',
+		      type: 'bullets',
+		      clickable: true,
+		    },
+		});
+		</script>
+		</footer>
+	</body>
+</html>

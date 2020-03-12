@@ -6,19 +6,30 @@
 		<title>トップページ</title>
 		<link rel="stylesheet" href="assets/css/common.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	</head>
 	<body>
 		<header>
-			<div id="nav-drawer">
-				<input id="nav-input" type="checkbox" class="nav-unshown">
-				<label id="nav-open" for="nav-input"><span></span></label>
-				<label class="nav-unshown" id="nav-close" for="nav-input"></label>
-				<div id="nav-content">ここに中身を入れる</div>
+			<!-- <div id="nav-open">
+  			<span></span>
+			</div> -->
+			<!--中身-->
+			<div id="nav-content">
+			  <div class="hamburger-top"></div>
+			  <ul class="category">
+					<li><a href="#contents-about">店舗について</a></li>
+					<li><a href="#contents-itemlist">商品一覧</a></li>
+					<li><a href="#contents-instagram">instagram</a></li>
+					<li><a href="#contents-storeinfo">店舗情報</a></li>
+					<li><a href="#contents-newslist">お知らせ</a></li>
+			  </ul>
 			</div>
-			<div class="container clearfix">
-			<div class="container-left">
+			<!--中身ここまで-->
+      <div class="header-main clearfix">
+			<div class="container-left clearfix">
 				<div class="header-title">
-					<h1><span class="sub-title">創業○○年</span><br>○○専門店　 店舗名</h1>
+					<h1 class="sub-title">創業○○年</h1>
+				  <h1 class="main-title"><br>○○専門店　 店舗名</h1>
 				</div>
 				<div class="header-sns">
 					<ul>
@@ -38,14 +49,13 @@
 				</div>
 			</div>
 			<div class="container-right">
-				<img class="main-visual" src="assets/img/main_visual.png" alt="メインビジュアル">
 			</div>
 			</div>
 		</header>
 
 
 
-		<div class="main">
+		<main>
 			<div id="contents-about" class="contents-about contents">
 				<div class="container clearfix">
 				<h2 class="tatetitle">店舗について</h2>
@@ -64,6 +74,7 @@
 			<div id="contents-itemlist" class="contents-itemlist contents">
 				<div class="container">
 				<h2 class="tatetitle">商品一覧</h2>
+				<div class="item-main">
 				<div class="item-list">
 					<div class="contents-item">
 						<a href="item_detail.html">
@@ -103,14 +114,16 @@
 					</div>
 				</div>
 				</div>
+				</div>
 			</div>
 
 			<div id="contents-instagram" class="contents-instagram contents">
-				<div class="container">
-				<div class="instaram-title">
+				<div class="container clearfix">
+				<div class="instagram-title">
 					<h2>instagram</h2>
 					<p><a href="#">#tenpo_name</a></p>
 				</div>
+				<div class="instagram-item-main">
 				<div class="instagram-item-list">
 					<div class="instagram-item">
 					<img class="instagram-img" src="assets/img/instagram.png" href="" alt="">
@@ -124,24 +137,31 @@
 					<div class="instagram-item">
 					<img class="instagram-img" src="assets/img/instagram.png" href="" alt="">
 					</div>
+			  </div>
 				</div>
 				</div>
 			</div>
 
 			<div id="contents-storeinfo" class="contents-storeinfo contents">
-				<div class="container">
+				<div class="container clearfix">
 				<h2 class="tatetitle">店舗情報</h2>
 				<div class="store-info">
-					<div class="store-text">
-						<p>〒000-000</p>
-						<p>東京都〇〇区〇〇丁目0-00-00</p>
-						<p>〇〇専門店　店舗名</p>
-						<p>℡ 000-0000-0000</p>
-						<p>営業時間 ××:×× - 〇〇:〇〇</p>
-						<p>定休日 不定休</p>
+				    <div class="store-text">
+						  <p>〒000-000</p>
+						  <p>東京都〇〇区〇〇丁目0-00-00</p>
+						  <p>〇〇専門店　店舗名</p>
+						  <p>TEL 000-0000-0000</p>
+					  	<br>
+					  	<p>営業時間 ××:×× - 〇〇:〇〇</p>
+					  	<p>定休日 不定休</p>
+						</div>
+						<div class="store-pic">
+								<img src="assets/img/store.png" href="" alt="">
+						</div>
+			  </div>
+					<div class="map-pic">
+						<img src="assets/img/map.png" href="" alt="">
 					</div>
-					<img class="store-pic" src="assets/img/store.png" alt="外観">
-					<img class="map-pic" src="assets/img/map.png" alt="MAP">
 				</div>
 				</div>
 			</div>
@@ -150,46 +170,120 @@
 				<div class="container">
 				<h2 class="tatetitle">お知らせ</h2>
 				<div class="news-list">
-					<div class="contents-news news-top"><a href="news_detail.html"><p>2019-01-01<img class="contents-news-img" src="assets/img/midasi.png" alt="">サンプルタイトルサンプルタイトル<img class="news-img-right" src="assets/img/news_right.png" alt=""></p></a></div>
-					<div class="contents-news"><a href="news_detail.html"><p>2019-01-01<img class="contents-news-img" src="assets/img/midasi.png" alt="">サンプルタイトルサンプルタイトル<img class="news-img-right" src="assets/img/news_right.png" alt=""></p></a></div>
-					<div class="contents-news"><a href="news_detail.html"><p>2019-01-01<img class="contents-news-img" src="assets/img/midasi.png" alt="">サンプルタイトルサンプルタイトル<img class="news-img-right" src="assets/img/news_right.png" alt=""></p></a></div>
-					<div class="contents-news"><a href="news_detail.html"><p>2019-01-01<img class="contents-news-img" src="assets/img/midasi.png" alt="">サンプルタイトルサンプルタイトル<img class="news-img-right" src="assets/img/news_right.png" alt=""></p></a></div>
-					<div class="contents-news"><a href="news_detail.html"><p>2019-01-01<img class="contents-news-img" src="assets/img/midasi.png" alt="">サンプルタイトルサンプルタイトル<img class="news-img-right" src="assets/img/news_right.png" alt=""></p></a></div>
+					<div class="contents-news news-top">
+						<a href="news_detail.html">
+							<p>2019-01-01<img class="contents-news-img" src="assets/img/midasi.png" alt="">サンプルタイトルサンプルタイトル<img class="news-img-right" src="assets/img/news_right.png" alt="">  NEW</p>
+						</a>
+					</div>
+					<div class="contents-news">
+						<a href="news_detail.html">
+							<p>2019-01-01<img class="contents-news-img" src="assets/img/midasi.png" alt="">サンプルタイトルサンプルタイトル<img class="news-img-right" src="assets/img/news_right.png" alt=""></p>
+						</a>
+					</div>
+					<div class="contents-news">
+						<a href="news_detail.html">
+							<p>2019-01-01<img class="contents-news-img" src="assets/img/midasi.png" alt="">サンプルタイトルサンプルタイトル<img class="news-img-right" src="assets/img/news_right.png" alt=""></p>
+						</a>
+					</div>
+					<div class="contents-news">
+						<a href="news_detail.html">
+							<p>2019-01-01<img class="contents-news-img" src="assets/img/midasi.png" alt="">サンプルタイトルサンプルタイトル<img class="news-img-right" src="assets/img/news_right.png" alt=""></p>
+						</a>
+					</div>
+					<div class="contents-news">
+						<a href="news_detail.html">
+							<p>2019-01-01<img class="contents-news-img" src="assets/img/midasi.png" alt="">サンプルタイトルサンプルタイトル<img class="news-img-right" src="assets/img/news_right.png" alt=""></p>
+						</a>
+					</div>
 				</div>
 				<a class="btn" href="news_list.html">お知らせ一覧へ</a>
 				</div>
 			</div>
-		</div>
+		</main>
 
 
 
-				<footer>
-					<div class="container">
-						<a class="page-top-btn clearfix" href="#">
-							<img src="assets/img/btn.png" alt="btn">
-							<p>PAGE TOP</p>
-						</a>
-						<div class="footer-title">
-								<h4><a href="index.html#">○○専門店　店舗名</a></h4>
-						</div>
-						<div class="footer-sns">
-							<ul>
-								<li><a href="#"><img src="assets/img/instagram_logo.png" alt="instagram"></a></li>
-								<li><a href="#"><img src="assets/img/facebook_logo.png" alt="facebook"></a></li>
-								<li><a href="#"><img src="assets/img/twitter_logo.png" alt="twitter"></a></li>
-							</ul>
-						</div>
-						<div class="footer-list">
-							<ul>
-								<li><a href="#contents-about">店舗について</a></li>
-								<li><a href="#contents-itemlist">商品一覧</a></li>
-								<li><a href="#contents-instagram">instagram</a></li>
-								<li><a href="#contents-storeinfo">店舗情報</a></li>
-								<li><a href="#contents-newslist">お知らせ</a></li>
-							</ul>
-						</div>
-						<p class="copyright">copyrignt</p>
+		<footer>
+			<div class="container">
+				<a class="page-top-btn clearfix" href="#">
+					<img src="assets/img/btn.png" alt="btn">
+					<p>PAGE TOP</p>
+				</a>
+
+			  <div class="footer-main">
+					<div class="footer-title">
+							<h4><a href="index.html#">○○専門店　店舗名</a></h4>
 					</div>
-				</footer>
-			</body>
-		</html>
+					<div class="footer-sns">
+						<ul>
+							<li><a href="#"><img src="assets/img/instagram_logo.png" alt="instagram"></a></li>
+							<li><a href="#"><img src="assets/img/facebook_logo.png" alt="facebook"></a></li>
+							<li><a href="#"><img src="assets/img/twitter_logo.png" alt="twitter"></a></li>
+						</ul>
+					</div>
+					<div class="footer-list">
+						<ul>
+							<li><a href="#contents-about">店舗について</a></li>
+							<li><a href="#contents-itemlist">商品一覧</a></li>
+							<li><a href="#contents-instagram">instagram</a></li>
+							<li><a href="#contents-storeinfo">店舗情報</a></li>
+							<li><a href="#contents-newslist">お知らせ</a></li>
+						</ul>
+					</div>
+					<p class="copyright">copyrignt</p>
+			  </div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+		// jQuery(function ($) {
+		//   $(function () {
+		//     $("#nav-open").on("click", function () {
+		//       if ($(this).hasClass("active")) {
+		//         $(this).removeClass("active");
+		//         $("#nav-content").removeClass("open").fadeOut(100);
+		//       } else {
+		//         $(this).addClass("active");
+		//         $("#nav-content").fadeIn(100).addClass("open");
+		//       }
+		//     });
+		//   });
+		// });
+		var speed = 3000; // フェードイン・フェードアウトの処理時間（1000で1秒）
+		var times = 5000; // 画像切り替えの間隔（1000で1秒）
+		var className = '.container-right';
+		var bgArray = [
+		  "assets/img/main_visual.png",
+		  "assets/img/main_visual.png",
+		  "assets/img/main_visual.png"
+		];
+		$.each(bgArray.reverse(), function(i, value) {
+		  $(className).prepend('<div class="slides" style="background-image:url(' + value + ');"></div>');
+		});
+		var bgNo = 1;
+		var bgLength = bgArray.length;
+		setInterval(function(){
+		  $(className + ' .slides:nth-child(' + bgNo + ')').fadeOut(speed/3);
+		  $(className + ' .slides:nth-child(' + ( bgNo === bgLength ? 1 : bgNo + 1) + ')').fadeIn(speed/3);
+		  if ( bgNo >= bgLength ) {
+		    bgNo = 1;
+		  } else {
+		    bgNo += 1;
+		  }
+		}, times);
+
+    // スクロール時アクション
+		$(function(){
+		　$(window).scroll(function (){
+		    $('.yajirushi').each(function(){
+		        var elemPos = $(this).offset().top;
+		        var scroll = $(window).scrollTop();
+		        var windowHeight = $(window).height();
+		        if (scroll > elemPos - windowHeight){
+		            $(this).addClass('scroll_view');
+		        }
+		    });
+		　});
+		});
+		</script>
+	</body>
+</html>
