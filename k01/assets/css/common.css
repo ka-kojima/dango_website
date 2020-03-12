@@ -662,6 +662,9 @@ footer {
 
 /* スマートフォン向けレイアウト */
 @media(max-width: 670px){
+  .container {
+    width: 100%;
+  }
   .instagram-item-list {
     flex-wrap: wrap;
   }
@@ -710,21 +713,29 @@ footer {
 		width: 100%;
 		text-align: center;
 	}
+  .instagram-title {
+    float: none;
+  }
   .store-info {
 	  width: 100%;
   }
 	.store-text {
 		width: 100%;
+    margin: 0 auto;
+    display: inline-block;
 	}
 	.store-pic {
 		width: 100%;
 	}
+  .map-pic {
+    width: 100%;
+  }
   .footer-list {
   	display: none;
   }
   .page-top-btn {
-  	margin: 5 auto;
-  	//float: none;
+  	margin: 15 auto;
+  	float: none;
   }
   .tatetitle {
     display: inline-block;
