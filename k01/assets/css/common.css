@@ -665,8 +665,22 @@ footer {
   .container {
     width: 100%;
   }
+  .contents {
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
+
+  }
+  .contents-header img{
+    float: left;
+  }
+  .contents-header {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    padding-left: 30px;
+  }
   .container-sub {
     width: 100%;
+    margin: 0 auto;
   }
   .news-top {
     width: 100%;
@@ -677,10 +691,22 @@ footer {
   .page-link {
     width: 100%;
   }
+  .contents-newslist {
+    width: 100%;
+  }
   .contents-itemtext {
     width: 100%;
   }
-
+  .contents-itemdetail {
+    width: 100%;
+  }
+  .item-pic img{
+    width: 100%;
+    height: auto;
+  }
+  .item-pic {
+    width: 100%;
+  }
   .instagram-item-list {
     flex-wrap: wrap;
   }
@@ -699,7 +725,7 @@ footer {
   .about-text {
 	  writing-mode: horizontal-tb;
 	  width: 100%;
-	  height: 500px;
+	  height: auto;
   }
   .news-list {
 	  width: 100%;
@@ -711,10 +737,10 @@ footer {
   	display: none;
   }
   .container-right{
-	width: 100%;
+	　width: 100%;
   }
   .container-right img{
-	height: auto;
+	　height: auto;
   }
   .container-left {
 	position: absolute;
@@ -733,31 +759,41 @@ footer {
     float: none;
   }
   .store-info {
-	  width: 100%;
+    float: none;
+    height: auto;
   }
 	.store-text {
-		width: 100%;
-    margin: 0 auto;
-    display: inline-block;
+    float: none;
+    display: block;
 	}
-	.store-pic {
+  .store-pic {
+    float: none;
+    margin: 0 auto;
+  }
+	.store-pic img{
 		width: 100%;
+    height: auto;
 	}
   .map-pic {
     width: 100%;
+    float: none;
+  }
+  .map-pic img{
+    width: 100%;
+    height: auto;
   }
   .footer-list {
   	display: none;
   }
   .page-top-btn {
-  	margin: 15 auto;
   	float: none;
+    margin: 10px auto;
+    width: 100%;
   }
   .tatetitle {
     display: inline-block;
   	margin: 20px auto;
   	float: none;
-    text-align: center;
   }
 	.contents-newslist h2{
 		margin: 0 auto;
@@ -780,10 +816,10 @@ footer {
     width: 100%;
     text-align: center;
   }
-  footer {
-    height: 200px;
-  }
 
+  footer {
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 480px) {
