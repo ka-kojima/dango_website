@@ -665,6 +665,22 @@ footer {
   .container {
     width: 100%;
   }
+  .container-sub {
+    width: 100%;
+  }
+  .news-top {
+    width: 100%;
+  }
+  .contents-newstext {
+    width: 100%;
+  }
+  .page-link {
+    width: 100%;
+  }
+  .contents-itemtext {
+    width: 100%;
+  }
+
   .instagram-item-list {
     flex-wrap: wrap;
   }
@@ -739,7 +755,7 @@ footer {
   }
   .tatetitle {
     display: inline-block;
-  	margin: 0 auto;
+  	margin: 20px auto;
   	float: none;
     text-align: center;
   }
