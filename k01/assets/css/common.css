@@ -691,9 +691,6 @@ footer {
   .page-link {
     width: 100%;
   }
-  .contents-newslist {
-    width: 100%;
-  }
   .contents-itemtext {
     width: 100%;
   }
@@ -737,19 +734,19 @@ footer {
   	display: none;
   }
   .container-right{
-	　width: 100%;
+	  width: 100%;
   }
   .container-right img{
-	　height: auto;
+	  height: auto;
   }
   .container-left {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	background-color: rgba(255,255,255,0.7);
-	height: 500px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  -webkit-transform: translate(-50%, -50%);
+	  transform: translate(-50%, -50%);
+	  background-color: rgba(255,255,255,0.7);
+	  height: 500px;
   }
 	.contents-newslist h2{
 		width: 100%;
@@ -764,7 +761,7 @@ footer {
   }
 	.store-text {
     float: none;
-    display: block;
+    display: inline-block;
 	}
   .store-pic {
     float: none;
