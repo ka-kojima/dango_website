@@ -7,49 +7,56 @@
 		<link rel="stylesheet" href="assets/css/common.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header>
-			<!-- <div id="nav-open">
-  			<span></span>
-			</div> -->
+
 			<!--中身-->
-			<div id="nav-content">
-			  <div class="hamburger-top"></div>
-			  <ul class="category">
-					<li><a href="#contents-about">店舗について</a></li>
-					<li><a href="#contents-itemlist">商品一覧</a></li>
-					<li><a href="#contents-instagram">instagram</a></li>
-					<li><a href="#contents-storeinfo">店舗情報</a></li>
-					<li><a href="#contents-newslist">お知らせ</a></li>
-			  </ul>
-			</div>
-			<!--中身ここまで-->
-      <div class="header-main clearfix">
-			<div class="container-left clearfix">
-				<div class="header-title">
-					<h1 class="sub-title">創業○○年</h1>
-				  <h1 class="main-title"><br>○○専門店　 店舗名</h1>
-				</div>
-				<div class="header-sns clearfix">
-					<ul>
-						<li><a href="#"><img src="assets/img/instagram_logo.png" alt=""></a></li>
-						<li><a href="#"><img src="assets/img/facebook_logo.png" alt=""></a></li>
-						<li><a href="#"><img src="assets/img/twitter_logo.png" alt=""></a></li>
-					</ul>
-				</div>
-				<div class="header-list clearfix">
-					<ul>
+			<div id="wrapper" class="clearfix">
+				<p class="btn-gnavi">
+	        <span></span>
+	        <span></span>
+	        <span></span>
+				</p>
+
+				<nav id="global-navi">
+					<ul class="menu">
 						<li><a href="#contents-about">店舗について</a></li>
 						<li><a href="#contents-itemlist">商品一覧</a></li>
 						<li><a href="#contents-instagram">instagram</a></li>
 						<li><a href="#contents-storeinfo">店舗情報</a></li>
 						<li><a href="#contents-newslist">お知らせ</a></li>
-					</ul>
+				  </ul>
+				</nav>
+		  </div>
+			<!--中身ここまで-->
+
+      <div class="header-main clearfix">
+				<div class="container-left clearfix">
+					<div class="header-title">
+						<h1 class="main-title"><span class="sub-title">創業○○年</span>
+					  <br>○○専門店　 店舗名</h1>
+					</div>
+					<div class="header-sns clearfix">
+						<ul>
+							<li><a href="#"><img src="assets/img/instagram_logo.png" alt=""></a></li>
+							<li><a href="#"><img src="assets/img/facebook_logo.png" alt=""></a></li>
+							<li><a href="#"><img src="assets/img/twitter_logo.png" alt=""></a></li>
+						</ul>
+					</div>
+					<div class="header-list clearfix">
+						<ul>
+							<li><a href="#contents-about">店舗について</a></li>
+							<li><a href="#contents-itemlist">商品一覧</a></li>
+							<li><a href="#contents-instagram">instagram</a></li>
+							<li><a href="#contents-storeinfo">店舗情報</a></li>
+							<li><a href="#contents-newslist">お知らせ</a></li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<div class="container-right clearfix">
-			</div>
+			  <div class="container-right clearfix">
+			  </div>
 			</div>
 		</header>
 
@@ -237,19 +244,25 @@
 			</div>
 		</footer>
 		<script type="text/javascript">
-		// jQuery(function ($) {
-		//   $(function () {
-		//     $("#nav-open").on("click", function () {
-		//       if ($(this).hasClass("active")) {
-		//         $(this).removeClass("active");
-		//         $("#nav-content").removeClass("open").fadeOut(100);
-		//       } else {
-		//         $(this).addClass("active");
-		//         $("#nav-content").fadeIn(100).addClass("open");
-		//       }
-		//     });
-		//   });
-		// });
+		$(function(){
+		    $(".btn-gnavi").on("click", function(){
+		        // ハンバーガーメニューの位置を設定
+		        var rightVal = 0;
+		        if($(this).hasClass("open")) {
+		            // 位置を移動させメニューを開いた状態にする
+		            rightVal = -300;
+		            // メニューを開いたら次回クリック時は閉じた状態になるよう設定
+		            $(this).removeClass("open");
+		        } else {
+		            // メニューを開いたら次回クリック時は閉じた状態になるよう設定
+		            $(this).addClass("open");
+		        }
+		        $("#global-navi").stop().animate({
+		            right: rightVal
+		        }, 200);
+		    });
+		});
+
 		var speed = 3000; // フェードイン・フェードアウトの処理時間（1000で1秒）
 		var times = 5000; // 画像切り替えの間隔（1000で1秒）
 		var className = '.container-right';
