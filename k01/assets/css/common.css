@@ -783,12 +783,3 @@ footer {
   }
 
 }
-
-@media only screen and (max-width: 480px) {
-    .container-right {
-        overflow: scroll;
-    }
-    .container-left {
-        width: 100%;
-    }
-}
