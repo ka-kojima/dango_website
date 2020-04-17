@@ -377,7 +377,6 @@ header {
 }
 
 .page-link {
-  width: 70%;
   margin: 0 auto;
 }
 
@@ -385,8 +384,8 @@ header {
   padding: 25px 50px;
   background-image: url(../img/yajirusi_right.png);
   background-repeat: no-repeat;
-	float: right;
-  background-position: 110px 12px;
+  background-position: 124px 12px;
+  float: right;
 }
 
 .page-prev {
@@ -564,25 +563,66 @@ footer {
   .news-top {
     width: 100%;
   }
-  .item-pic img{
-    width: 100%;
-    height: auto;
-  }
-  .item-pic {
-    width: 100%;
-  }
+  /* top */
+　/* お知らせ */
+　.contents-newslist h2{
+　  display: block;
+　}
+
+  /* instagram */
   .instagram-item-list {
     flex-wrap: wrap;
   }
-  .item-list {
-    flex-direction: column;
+  /* .instagram-item {
+    width: 50%;
+  } */
+
+  /* お知らせ詳細 */
+  .contents-newsdetaill {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0 auto;
   }
-  .instagram-item {
+  .contents-newsdetaill h2{
+    display: block;
+  }
+  .contents-newstext {
+    width: 100%;
+  }
+
+  /* 商品一覧 */
+  .item-main {
+    width: 100%;
+  }
+  .item-list {
+    width: 100%;
+  }
+  .item-list .contents-item {
+    display: flex;
+	  /* width: 100%; */
+  }
+  .item-list .contents-item:nth-child(odd){
+    flex-direction: row-reverse;
+  }
+  .item-list .item-image {
     width: 50%;
   }
-  .contents-item {
-	  width:100%;
+  .yajirushi {
+    display: none;
   }
+
+  /* 商品詳細 */
+  .item-pic img{
+    width: 100%;
+  }
+  .contents-itemdetail {
+    width: 100%;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
   .btn {
 	  width: 100%;
   }
@@ -674,15 +714,21 @@ footer {
   	margin: 20px auto;
   	float: none;
   }
-	.contents-newslist h2{
-    display:block;
-	}
-  .pager .pagination li{
-    display: none;
-  }
+
+  /* 商品詳細 */
   .contents-itemtext {
     width: 100%;
   }
+  .item-pic {
+    width: 100%;
+    height: auto;
+  }
+
+  /* お知らせ一覧 */
+  .contents-newsalllist {
+    padding-top: 0px;
+  }
+
   .pager .pagination li.pre,
   .pager .pagination li.next{
     display: inline-block;
@@ -708,6 +754,8 @@ footer {
   .container-right .slides {
     width: 100%;
   }
+
+  /* ハンバーガーメニュー */
   #wrapper {
     display: inherit;
   }

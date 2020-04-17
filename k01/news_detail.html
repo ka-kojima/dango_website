@@ -6,11 +6,31 @@
 		<title>お知らせ</title>
 		<link rel="stylesheet" href="assets/css/common.css">
 		<link rel="stylesheet" href="assets/css/style.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<header class="contents-header">
 			<a href="index.html"><img src="assets/img/main-logo.png"></a>
+			<!--中身-->
+			<div id="wrapper" class="clearfix">
+				<p class="btn-gnavi">
+	        <span></span>
+	        <span></span>
+	        <span></span>
+				</p>
+				<nav id="global-navi">
+					<ul class="menu">
+						<li><a href="index.html#contents-about">店舗について</a></li>
+						<li><a href="index.html#contents-itemlist">商品一覧</a></li>
+						<li><a href="index.html#contents-instagram">instagram</a></li>
+						<li><a href="index.html#contents-storeinfo">店舗情報</a></li>
+						<li><a href="index.html#contents-newslist">お知らせ</a></li>
+				  </ul>
+				</nav>
+		  </div>
+			<!--中身ここまで-->
 		</header>
+
 		<main>
 			<div id="contents-newsdetaill" class="contents-newsdetaill contents">
 				<div class="container-sub">
@@ -38,7 +58,7 @@
 						<br>
 						<p>サンプルテキスト</p>
 					</div>
-					<div class="page-link">
+					<div class="page-link clearfix">
 						<a class="page-next" href="#"><p>NEXT</p></a>
 						<a class="page-prev" href="#"><p>PREV</p></a>
 					</div>
@@ -79,5 +99,25 @@
 			  </div>
 			</div>
 		</footer>
+		<script type="text/javascript">
+		$(function(){
+		    $(".btn-gnavi").on("click", function(){
+		        // ハンバーガーメニューの位置を設定
+		        var rightVal = 0;
+		        if($(this).hasClass("open")) {
+		            // 位置を移動させメニューを開いた状態にする
+		            rightVal = -300;
+		            // メニューを開いたら次回クリック時は閉じた状態になるよう設定
+		            $(this).removeClass("open");
+		        } else {
+		            // メニューを開いたら次回クリック時は閉じた状態になるよう設定
+		            $(this).addClass("open");
+		        }
+		        $("#global-navi").stop().animate({
+		            right: rightVal
+		        }, 200);
+		    });
+		});
+		</script>
 	</body>
 </html>
