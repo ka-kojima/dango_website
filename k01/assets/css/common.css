@@ -31,6 +31,12 @@ ul {
 	margin: 0 auto;
 }
 
+.sub-container {
+  /* display: block; */
+  margin: 0 auto;
+  width: 70%;
+}
+
 .contents {
   padding-top: 80px;
 	padding-bottom: 80px;
@@ -68,25 +74,20 @@ ul {
   display: none;
 }
 
-
-/* ヘッダー */
-header {
-	width: 100%;
-	height: 100%;
-}
-
 #wrapper {
   display: none;
 }
 
-.container-left {
-  display: block;
-  float: left;
-	width: 29%;
-  height: 100vh;
-	margin: 0 auto;
+/* ヘッダー */
+.header-main {
+  display: flex;
+  width: 100%;
+	height: 100vh;
 }
-
+.container-left {
+	width: 29%;
+	height: 100vh;
+}
 .container-right {
 	width: 71%;
   background-size: contain;
@@ -94,9 +95,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-	float: right;
 }
-
 .container-right .slides {
   position: absolute;
   width: 71%;
@@ -105,63 +104,50 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-	float: right;
 }
-
 .container-right .slides:not(:first-child) {
   display: none;
 }
-
 .header-title {
 	writing-mode: vertical-rl;
 	padding-top: 44px;
   padding-left: 80px;
 	margin: 0 auto;
 }
-
 .header-title h1{
 	font-size: 30px;
 }
-
 .sub-title{
 	font-size: 24px;
 }
-
 .main-title {
   padding-top: 33px;
 }
-
 .tenpo-all-name {
   padding-top: 33px;
-
 }
-
 .tenpo-name {
   padding: 0px 50px;
   background-position: 0px 22px;
   background-image: url(../img/logo.png);
   background-repeat: no-repeat;
 }
-
 .header-sns {
 	padding-top: 40px;
 	height: auto;
 	width: 100%;
 	margin: 0 auto;
 }
-
 .header-sns ul {
 	padding-top: 5px;
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;
 }
-
 .header-sns li{
 	display: inline-block;
 	margin: 0 10px 0 0;
 }
-
 .header-list {
 	padding-top: 20px;
 	margin: 0 auto;
@@ -169,32 +155,25 @@ header {
 	text-align: center;
 	font-size: 18px;
 }
-
 .header-list ul {
 	padding-top: 5px;
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;
 }
-
 .header-list li{
 	margin: 10px 10px 0 0;
 }
 
 
-
 /* 店舗について */
 .about-text {
-  display: block;
-  width: 70%;
-  margin: 0 auto;
 	writing-mode: vertical-rl;
 	column-count: 1;
 	column-gap: 100px;
 	height: 350px;
   font-size: 22px;
 }
-
 .about-text p {
 	padding-right: 25px;
 	padding-left: 25px;
@@ -202,14 +181,7 @@ header {
 }
 
 
-
 /* 商品一覧 */
-.item-main {
-  display: block;
-  margin: 0 auto;
-  width: 70%;
-}
-
 .item-list {
   display: flex;
   flex-wrap: wrap;
@@ -221,7 +193,6 @@ header {
 .contents-item p {
   margin-bottom: 50px;
 }
-
 .contents-item {
 	writing-mode: vertical-rl;
 	flex: auto;
@@ -229,21 +200,17 @@ header {
   margin-right: 40px;
   margin-bottom: 30px;
 }
-
 .item-body {
   padding-left: 16px;
 }
-
 .item-image {
   position: relative;
 }
-
 .yajirushi {
   position: absolute;
   top: 150px;
   left: 150px;
 }
-
 @keyframes scroll_view {
   from {
     opacity: 0;
@@ -255,7 +222,6 @@ header {
     transform: translateX(0);
   }
 }
-
 .scroll_view {
   animation-name: scroll_view;
   animation-duration: 1s;
@@ -263,66 +229,52 @@ header {
 }
 
 
-
 /* instagram */
 .contents-instagram {
 	background-color: #f7f7f7;
 }
-
 .instagram-title {
 	float: right;
 }
-
 .instagram-title p {
   padding-top: 40px;
 }
-
-.instagram-item-main {
-  display: block;
-  margin: 0 auto;
-  width: 70%;
-}
-
 .instagram-item-list {
+  display: -webkit-flex;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
-
-.instagram-item {
-  flex: auto;
+.instagram-item img {
+  width: 100%;
+  padding: 10px;
+  height: auto;
 }
 
 
 /* 店舗情報 */
 .store-info {
-  width: 70%;
-  display: block;
+  display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
   justify-content: center;
-  height: 192px;
 }
-
 .store-text {
-  float: left;
-  display: inline-block;
+  width: 55%;
 	font-size: 16px;
   text-align: left;
 }
-
 .store-pic {
-  margin: 0 auto;
-  float: right;
+  width: 45%;
 }
-
+.store-pic img{
+  width: 100%;
+}
 .map-pic {
   width: 70%;
 	margin: 0 auto;
   padding-top: 80px;
   display: inline-block;
 }
-
 .map-pic  img {
   width: 100%;
 }
@@ -338,17 +290,14 @@ header {
 	padding-bottom: 25px;
 	padding-left: 15px;
 }
-
 .contents-news-img {
   padding: 0px 10px 0px 10px;
 }
-
 .news-title {
   display: table-cell;
   float: left;
   width: 90%;
 }
-
 .news-img-right {
   display: table-cell;
   vertical-align: middle;
@@ -356,19 +305,9 @@ header {
   width: 10%;
   padding-right: 20px;
 }
-
 .news-top {
 	border-top: 2px solid #dee7ec;
-	/* padding-top: 15px; */
 }
-
-.news-list {
-	width: 70%;
-	margin: 0 auto;
-	padding-bottom: 54px;
-  display: block;
-}
-
 .btn {
   width: 70%;
 	display: block;
@@ -380,8 +319,8 @@ header {
 	padding: 10px;
 	font-size: 18px;
   margin: 0 auto;
+  margin-top: 54px;
 }
-
 .btn:hover {
 	opacity: 1;
 }
@@ -497,16 +436,6 @@ header {
 }
 
 
-/* お知らせ一覧 */
-.title-text {
-  display: block;
-}
-.news-text {
-  display: block;
-  float: right;
-}
-
-
 /* フッター */
 footer {
 	background-color: gray;
@@ -567,6 +496,20 @@ footer {
 
 /* タブレット向けレイアウト */
 @media(max-width: 1000px){
+  /* 店舗について */
+  .about-text {
+    writing-mode: horizontal-tb;
+    width: 70%;
+    height: 500px;
+  }
+  /* instagram */
+  .instagram-title {
+    float: none;
+  }
+  .instagram-title p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .instagram-item-list {
     flex-wrap: wrap;
   }
@@ -575,14 +518,6 @@ footer {
 	}
 	.contents-item {
 		width: 50%;
-	}
-	.about-text {
-		writing-mode: horizontal-tb;
-		width: 70%;
-		height: 500px;
-	}
-	.news-list {
-		width: 70%;
 	}
   .btn {
     width: 70%;
@@ -593,6 +528,9 @@ footer {
 /* スマートフォン向けレイアウト */
 @media(max-width: 670px){
   .container {
+    width: 100%;
+  }
+  .sub-container {
     width: 100%;
   }
   .tatetitle {
@@ -622,23 +560,12 @@ footer {
   .news-top {
     width: 100%;
   }
-  .news-img-right {
-    /* display: table-cell; */
-    /* width: 15%;
-    height: auto; */
-  }
-  /* .news-img-right img {
-    width: 100%;
-  } */
   .news-title {
     display: table-cell;
     width: 85%;
   }
 
   /* 商品一覧 */
-  .item-main {
-    width: 100%;
-  }
   .item-list {
     display: block;
     width: 100%;
@@ -652,20 +579,9 @@ footer {
   .item-body {
     width: 30%;
   }
-  .item-body p {
-
-  }
   .yajirushi {
     display: none;
   }
-
-  /* instagram */
-  .instagram-item-list {
-    flex-wrap: wrap;
-  }
-  /* .instagram-item {
-    width: 50%;
-  } */
 
   /* お知らせ詳細 */
   .contents-newsdetail {
@@ -696,9 +612,6 @@ footer {
   .about-text p {
   	padding-top: 10px;
   	padding-bottom: 10px;
-  }
-  .news-list {
-	  width: 100%;
   }
   .news-detail-list {
     width: 100%;
@@ -744,33 +657,28 @@ footer {
     margin-left: 15px;
     float: left;
   }
-  .instagram-title {
-    float: none;
-  }
+
+  /* 店舗情報 */
   .store-info {
-    float: none;
-    height: auto;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
-	.store-text {
-    float: none;
-    display: inline-block;
-	}
   .store-pic {
-    float: none;
+    width: 80%;
     margin: 0 auto;
   }
-	.store-pic img{
-		width: 100%;
-    height: auto;
-	}
+  .store-text {
+    padding-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
   .map-pic {
+    padding-top: 20px;
     width: 100%;
-    float: none;
   }
-  .map-pic img{
-    width: 100%;
-    height: auto;
-  }
+
   .footer-list {
   	display: none;
   }
