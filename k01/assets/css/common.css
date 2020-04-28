@@ -28,7 +28,6 @@ ul {
 .container {
 	max-width: 1170px;
 	width: 100%;
-  /* width: 1080px; */
 	margin: 0 auto;
 }
 
@@ -39,6 +38,13 @@ ul {
 	padding-right: 5%;
 	text-align: center;
   /* margin: 0 auto; */
+}
+
+.contents-sub {
+	padding-bottom: 80px;
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: center;
 }
 
 .clearfix::after {
@@ -109,7 +115,7 @@ header {
 .header-title {
 	writing-mode: vertical-rl;
 	padding-top: 44px;
-  padding-left: 30px;
+  padding-left: 80px;
 	margin: 0 auto;
 }
 
@@ -125,6 +131,11 @@ header {
   padding-top: 33px;
 }
 
+.tenpo-all-name {
+  padding-top: 33px;
+
+}
+
 .tenpo-name {
   padding: 0px 50px;
   background-position: 0px 22px;
@@ -133,8 +144,8 @@ header {
 }
 
 .header-sns {
-	padding-top: 20px;
-	height: 50px;
+	padding-top: 40px;
+	height: auto;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -180,8 +191,8 @@ header {
 	writing-mode: vertical-rl;
 	column-count: 1;
 	column-gap: 100px;
-	height: 300px;
-  font-size: 18px;
+	height: 350px;
+  font-size: 22px;
 }
 
 .about-text p {
@@ -204,7 +215,9 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.item-main-image {
+  width: 100%;
+}
 .contents-item p {
   margin-bottom: 50px;
 }
@@ -215,6 +228,10 @@ header {
 	font-size: 20px;
   margin-right: 40px;
   margin-bottom: 30px;
+}
+
+.item-body {
+  padding-left: 16px;
 }
 
 .item-image {
@@ -254,6 +271,10 @@ header {
 
 .instagram-title {
 	float: right;
+}
+
+.instagram-title p {
+  padding-top: 40px;
 }
 
 .instagram-item-main {
@@ -296,25 +317,55 @@ header {
 }
 
 .map-pic {
+  width: 70%;
 	margin: 0 auto;
   padding-top: 80px;
   display: inline-block;
 }
 
+.map-pic  img {
+  width: 100%;
+}
+
 
 /* お知らせ */
+.contents-news {
+  display: table;
+  width: 100%;
+  text-align: left;
+	border-bottom: 2px solid #dee7ec;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 15px;
+}
+
 .contents-news-img {
   padding: 0px 10px 0px 10px;
 }
 
+.news-title {
+  display: table-cell;
+  float: left;
+  width: 90%;
+}
+
 .news-img-right {
+  display: table-cell;
+  width: 10%;
   float: right;
   padding-right: 20px;
 }
 
+.news-img-right img{
+  vertical-align: middle;
+  text-align: center;
+  /* width: 100%; */
+  /* height: auto; */
+}
+
 .news-top {
 	border-top: 2px solid #dee7ec;
-	padding-top: 15px;
+	/* padding-top: 15px; */
 }
 
 .news-list {
@@ -322,14 +373,6 @@ header {
 	margin: 0 auto;
 	padding-bottom: 54px;
   display: block;
-}
-
-.contents-news {
-  text-align: left;
-	border-bottom: 2px solid #dee7ec;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	padding-left: 15px;
 }
 
 .btn {
@@ -361,15 +404,26 @@ header {
   width: 90%;
   margin: 0 auto;
 }
+.swiper-slide img {
+  width: 100%;
+}
 .item-pic {
   display: block;
   width: 70%;
-  padding: 15px;
+  padding-top: 80px;
   margin: 0 auto;
+}
+.swiper-pagination {
+  position: relative;
+  padding: 10px;
+}
+.swiper-pagination-bullet {
+  margin: 10px;
+  padding: 8px;
 }
 .contents-itemtext {
   display: block;
-  width: 60%;
+  width: 65%;
 	padding: 15px;
   text-align: left;
   margin: 0 auto;
@@ -384,7 +438,7 @@ header {
   padding: 25px 50px;
   background-image: url(../img/yajirusi_right.png);
   background-repeat: no-repeat;
-  background-position: 124px 12px;
+  background-position: 120px 12px;
   float: right;
 }
 
@@ -421,28 +475,26 @@ header {
 
 
 /* お知らせ詳細 */
-.contents-newsdetaill {
+.contents-newsdetail {
   width: 90%;
   margin: 0 auto;
-  font-size: 18px;
-	padding-top: 80px;
-	padding-bottom: 80px;
-	padding-left: 5%;
-	padding-right: 5%;
 	text-align: left;
 }
-
+.news-title-top {
+	padding: 25px;
+  border-top: 2px solid #dee7ec;
+}
 .contents-newstext-title {
+  font-size: 24px;
 	text-align: left;
-	padding-bottom: 15px;
-	width: 70%;
+	width: 80%;
 	margin: 0 auto;
-	padding: 15px;
+  padding-top: 80px;
 }
-
 .contents-newstext {
-	width: 70%;
-	padding: 36px 10px;
+  font-size: 18px;
+	width: 80%;
+	padding: 36px 25px;
 	text-align: left;
 	border-top: 2px solid #dee7ec;
 	border-bottom: 2px solid #dee7ec;
@@ -450,10 +502,11 @@ header {
 	margin-bottom: 60px;
 }
 
+
+/* お知らせ一覧 */
 .title-text {
   display: block;
 }
-
 .news-text {
   display: block;
   float: right;
@@ -529,17 +582,21 @@ footer {
 	.contents-item {
 		width: 50%;
 	}
+
 	.btn {
 		width: 100%;
 	}
 	.about-text {
 		writing-mode: horizontal-tb;
-		width: 100%;
+		width: 70%;
 		height: 500px;
 	}
 	.news-list {
-		width: 100%;
+		width: 70%;
 	}
+  .btn {
+    width: 70%;
+  }
 }
 
 
@@ -548,6 +605,14 @@ footer {
   .container {
     width: 100%;
   }
+  .tatetitle {
+    display: inline-block;
+    margin: 20px auto;
+    float: none;
+  }
+
+  /* top */
+  /* header */
   .contents-header img{
     float: left;
   }
@@ -556,18 +621,53 @@ footer {
     padding-bottom: 0px;
     padding-left: 30px;
   }
-  .container-sub {
-    width: 100%;
-    margin: 0 auto;
+  .br-sm-del {
+    display: none;
   }
-  .news-top {
-    width: 100%;
-  }
-  /* top */
+
 　/* お知らせ */
 　.contents-newslist h2{
 　  display: block;
 　}
+  .news-top {
+    width: 100%;
+  }
+  .news-img-right {
+    /* display: table-cell; */
+    width: 15%;
+    height: auto;
+  }
+  /* .news-img-right img {
+    width: 100%;
+  } */
+  .news-title {
+    display: table-cell;
+    width: 85%;
+  }
+
+  /* 商品一覧 */
+  .item-main {
+    width: 100%;
+  }
+  .item-list {
+    display: block;
+    width: 100%;
+  }
+  .contents-item {
+	  width: 100%;
+  }
+  .item-image {
+    width: 70%;
+  }
+  .item-body {
+    width: 30%;
+  }
+  .item-body p {
+
+  }
+  .yajirushi {
+    display: none;
+  }
 
   /* instagram */
   .instagram-item-list {
@@ -578,51 +678,26 @@ footer {
   } */
 
   /* お知らせ詳細 */
-  .contents-newsdetaill {
+  .contents-newsdetail {
     padding-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
     margin: 0 auto;
+    width: 100%;
   }
-  .contents-newsdetaill h2{
+  .contents-newsdetail h2{
     display: block;
   }
   .contents-newstext {
     width: 100%;
   }
+  .contents-newstext-title {
+    padding: 0px;
+    width: 100%;
+  }
 
-  /* 商品一覧 */
-  .item-main {
-    width: 100%;
-  }
-  .item-list {
-    width: 100%;
-  }
-  .item-list .contents-item {
-    display: flex;
-	  /* width: 100%; */
-  }
-  .item-list .contents-item:nth-child(odd){
-    flex-direction: row-reverse;
-  }
-  .item-list .item-image {
-    width: 50%;
-  }
-  .yajirushi {
-    display: none;
-  }
 
   /* 商品詳細 */
-  .item-pic img{
-    width: 100%;
-  }
-  .contents-itemdetail {
-    width: 100%;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-
   .btn {
 	  width: 100%;
   }
@@ -631,8 +706,16 @@ footer {
 	  width: 100%;
 	  height: auto;
   }
+  .about-text p {
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  }
   .news-list {
 	  width: 100%;
+  }
+  .news-detail-list {
+    width: 100%;
+    padding-bottom: 0px;
   }
   .header-list {
   	display: none;
@@ -664,13 +747,14 @@ footer {
 	  background-color: rgba(255,255,255,0.7);
   }
 　.page-link {
-    width: 100%;
+    padding: 10px;
   }
   .page-next {
-    margin: 0px;
+    margin-right: 15px;
+    float: right;
   }
   .page-prev {
-    margin: 0px;
+    margin-left: 15px;
     float: left;
   }
   .instagram-title {
@@ -709,24 +793,40 @@ footer {
     padding-top: 20px;
     width: 100%;
   }
-  .tatetitle {
-    display: inline-block;
-  	margin: 20px auto;
-  	float: none;
-  }
 
   /* 商品詳細 */
-  .contents-itemtext {
-    width: 100%;
+  .contents {
+    padding-right: 0%;
+    padding-left: 0%;
   }
   .item-pic {
     width: 100%;
-    height: auto;
+    padding: 0px;
+  }
+  .item-pic img{
+    width: 100%;
+  }
+  .contents-itemdetail {
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .swiper-slide img {
+    width: 100%;
+  }
+  .contents-itemtext {
+    width: 100%;
   }
 
   /* お知らせ一覧 */
   .contents-newsalllist {
     padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin: 0 auto;
+    width: 100%;
   }
   .pager .pagination {
      text-align: center;
