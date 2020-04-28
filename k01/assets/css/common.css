@@ -351,16 +351,10 @@ header {
 
 .news-img-right {
   display: table-cell;
-  width: 10%;
-  float: right;
-  padding-right: 20px;
-}
-
-.news-img-right img{
   vertical-align: middle;
   text-align: center;
-  /* width: 100%; */
-  /* height: auto; */
+  width: 10%;
+  padding-right: 20px;
 }
 
 .news-top {
@@ -582,10 +576,6 @@ footer {
 	.contents-item {
 		width: 50%;
 	}
-
-	.btn {
-		width: 100%;
-	}
 	.about-text {
 		writing-mode: horizontal-tb;
 		width: 70%;
@@ -634,8 +624,8 @@ footer {
   }
   .news-img-right {
     /* display: table-cell; */
-    width: 15%;
-    height: auto;
+    /* width: 15%;
+    height: auto; */
   }
   /* .news-img-right img {
     width: 100%;
@@ -698,9 +688,6 @@ footer {
 
 
   /* 商品詳細 */
-  .btn {
-	  width: 100%;
-  }
   .about-text {
 	  writing-mode: horizontal-tb;
 	  width: 100%;
