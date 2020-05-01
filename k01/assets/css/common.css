@@ -153,7 +153,8 @@ ul {
 }
 .header-sns li{
 	display: inline-block;
-	margin: 0 10px 0 0;
+	margin-left: 5px;
+  margin-right: 5px;
 }
 .header-list {
   position: absolute;
@@ -512,6 +513,16 @@ footer {
   .container-right .slides {
     width: 100%;
   }
+  .container-left {
+    display: block;
+    width: 38%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    margin: 0 auto;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.5);
+  }
   .header-list {
     display: none;
   }
@@ -522,25 +533,14 @@ footer {
     height: auto;
   }
   .header-title {
-    padding-left: 0px;
     padding-top: 0px;
+    padding-left: 0px;
   }
   .main-title {
-    padding-left: 30px;
+    padding-left: 45px;
   }
   .header-sns {
-    top: 80%;
-  }
-  .container-left {
-    width: 38%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: 0 auto;
-    z-index: 1;
-    -webkit-transform: translate(-100%, -50%);
-    transform: translate(-50%, -50%);
-    background-color: rgba(255,255,255,0.7);
+    top: 70%;
   }
   /* 店舗について */
   .about-text {
