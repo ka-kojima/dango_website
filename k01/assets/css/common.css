@@ -508,6 +508,43 @@ footer {
 
 /* タブレット向けレイアウト */
 @media(max-width: 1000px){
+  /* ヘッダー */
+  .container-right .slides {
+    width: 100%;
+  }
+  .header-list {
+    display: none;
+  }
+  .container-right{
+    width: 100%;
+  }
+  .container-right img{
+    height: auto;
+  }
+  .header-title {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .main-title {
+    padding-left: 30px;
+  }
+  .header-sns {
+    position: absolute;
+    transform: translateX(50%);
+    bottom: 10%;
+  }
+  .container-left {
+    position: absolute;
+    width: 38%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    z-index: 1;
+    -webkit-transform: translate(-100%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,0.7);
+  }
   /* 店舗について */
   .about-text {
     writing-mode: horizontal-tb;
@@ -564,40 +601,6 @@ footer {
   }
 
   /* top */
-  /* ヘッダー */
-  .container-right .slides {
-    width: 100%;
-  }
-  .header-list {
-  	display: none;
-  }
-  .container-right{
-	  width: 100%;
-  }
-  .container-right img{
-	  height: auto;
-  }
-  .header-title {
-    padding-left: 10px;
-  }
-  .main-title {
-    padding-left: 30px;
-  }
-  .header-sns {
-    /* height: auto; */
-  }
-  .container-left {
-    width: 38%;
-	  position: absolute;
-	  top: 50%;
-	  left: 50%;
-    margin: 0 auto;
-    z-index: 1;
-	  -webkit-transform: translate(-100%, -50%);
-	  transform: translate(-50%, -50%);
-	  background-color: rgba(255,255,255,0.7);
-  }
-
   /* 店舗について */
   .about-text {
 	  writing-mode: horizontal-tb;
