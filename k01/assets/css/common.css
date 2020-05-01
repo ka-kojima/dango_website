@@ -85,6 +85,7 @@ ul {
 	height: 100vh;
 }
 .container-left {
+  position: relative;
 	width: 29%;
 	height: 100vh;
 }
@@ -109,6 +110,9 @@ ul {
   display: none;
 }
 .header-title {
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
 	writing-mode: vertical-rl;
 	padding-top: 44px;
   padding-left: 80px;
@@ -133,7 +137,10 @@ ul {
   background-repeat: no-repeat;
 }
 .header-sns {
-	padding-top: 40px;
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  top: 57%;
 	height: auto;
 	width: 100%;
 	margin: 0 auto;
@@ -149,7 +156,10 @@ ul {
 	margin: 0 10px 0 0;
 }
 .header-list {
-	padding-top: 20px;
+  position: absolute;
+  transform: translateX(50%);
+  right: 50%;
+  top: 65%;
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
@@ -574,7 +584,7 @@ footer {
     padding-left: 30px;
   }
   .header-sns {
-    height: auto;
+    /* height: auto; */
   }
   .container-left {
     width: 38%;
