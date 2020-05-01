@@ -6,8 +6,7 @@
 		<title>トップページ</title>
 		<link rel="stylesheet" href="assets/css/common.css">
 		<link rel="stylesheet" href="assets/css/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="assets/js/jquery-3.5.0.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -271,7 +270,7 @@
 		<footer>
 			<div class="container clearfix">
 				<div class="page-top-btn clearfix">
-				<a href="#">
+				<a id="page-top-btn" href="#top">
 					<img src="assets/img/btn.png" alt="btn">
 					<p>PAGE TOP</p>
 				</a>
@@ -364,6 +363,17 @@
 		        }
 		    });
 		　});
+		});
+　　// ページトップ
+		$(function () {
+		    var topBtn = $('#page-top-btn');
+		    //スルスルっとスクロールでトップへもどる
+		    topBtn.click(function () {
+		        $('body,html').animate({
+		            scrollTop: 0
+		        }, 500);
+		        return false;
+		    });
 		});
 		</script>
 	</body>
