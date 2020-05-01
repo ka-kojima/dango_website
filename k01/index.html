@@ -21,11 +21,11 @@
 
 				<nav id="global-navi">
 					<ul class="menu">
-						<li><a href="#contents-about">店舗について</a></li>
-						<li><a href="#contents-itemlist">商品一覧</a></li>
-						<li><a href="#contents-instagram">instagram</a></li>
-						<li><a href="#contents-storeinfo">店舗情報</a></li>
-						<li><a href="#contents-newslist">お知らせ</a></li>
+						<li><a href="index.html#contents-about">店舗について</a></li>
+						<li><a href="index.html#contents-itemlist">商品一覧</a></li>
+						<li><a href="index.html#contents-instagram">instagram</a></li>
+						<li><a href="index.html#contents-storeinfo">店舗情報</a></li>
+						<li><a href="index.html#contents-newslist">お知らせ</a></li>
 				  </ul>
 				</nav>
 		  </div>
@@ -307,6 +307,7 @@
 			</div>
 		</footer>
 		<script type="text/javascript">
+		// グローバルメニュー
 		$(function(){
 		    $(".btn-gnavi").on("click", function(){
 		        // ハンバーガーメニューの位置を設定
@@ -324,6 +325,9 @@
 		            right: rightVal
 		        }, 200);
 		    });
+				$('.menu a[href]').on('click', function(event) {
+		    $('.btn-gnavi').trigger('click');
+});
 		});
 
 		var speed = 3000; // フェードイン・フェードアウトの処理時間（1000で1秒）
