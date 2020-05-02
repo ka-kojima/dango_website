@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="assets/css/common.css">
 		<link rel="stylesheet" href="assets/css/style.css">
 		<script src="assets/js/jquery-3.5.0.min.js"></script>
+		<script src="assets/js/common.js"></script>
 	</head>
 	<body>
 		<header class="contents-header">
@@ -70,10 +71,12 @@
 
 		<footer>
 			<div class="container">
-				<a class="page-top-btn clearfix" href="#">
-					<img src="assets/img/btn.png" alt="btn">
-					<p>PAGE TOP</p>
-				</a>
+				<div class="page-top-btn clearfix">
+					<a id="page-top-btn" href="#top">
+						<img src="assets/img/btn.png" alt="btn">
+						<p>PAGE TOP</p>
+					</a>
+			  </div>
 
 			  <div class="footer-main">
 					<div class="footer-title">
@@ -99,25 +102,5 @@
 			  </div>
 			</div>
 		</footer>
-		<script type="text/javascript">
-		$(function(){
-		    $(".btn-gnavi").on("click", function(){
-		        // ハンバーガーメニューの位置を設定
-		        var rightVal = 0;
-		        if($(this).hasClass("open")) {
-		            // 位置を移動させメニューを開いた状態にする
-		            rightVal = -300;
-		            // メニューを開いたら次回クリック時は閉じた状態になるよう設定
-		            $(this).removeClass("open");
-		        } else {
-		            // メニューを開いたら次回クリック時は閉じた状態になるよう設定
-		            $(this).addClass("open");
-		        }
-		        $("#global-navi").stop().animate({
-		            right: rightVal
-		        }, 200);
-		    });
-		});
-		</script>
 	</body>
 </html>
