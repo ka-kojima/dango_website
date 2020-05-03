@@ -85,8 +85,8 @@
   transform: translateX(50%);
   right: 50%;
 	writing-mode: vertical-rl;
-	padding-top: 44px;
-  padding-left: 65px;
+	padding-top: 20px;
+  padding-left: 85px;
 	margin: 0 auto;
 }
 .header-title h1{
@@ -111,7 +111,7 @@
   position: absolute;
   transform: translateX(50%);
   right: 50%;
-  top: 57%;
+  top: 55%;
 	height: auto;
 	width: 100%;
 	margin: 0 auto;
@@ -131,7 +131,7 @@
   position: absolute;
   transform: translateX(50%);
   right: 50%;
-  top: 65%;
+  top: 63%;
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
