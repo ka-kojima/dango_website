@@ -1,4 +1,10 @@
-// ハンバーガーメニュー
+//共通パーツ読み込み
+$(function() {
+  // $("#header").load("parts/header.html");
+  $("#footer").load("parts/footer.html");
+});
+
+// グローバルメニュー
 $(function(){
     $(".btn-gnavi").on("click", function(){
         // ハンバーガーメニューの位置を設定
@@ -15,17 +21,20 @@ $(function(){
         $("#global-navi").stop().animate({
             right: rightVal
         }, 200);
+      });
+      $('.menu a[href]').on('click', function(event) {
+      $('.btn-gnavi').trigger('click');
     });
 });
 
 // ページトップ
-	$(function () {
-	    var topBtn = $('#page-top-btn');
-	    //スルスルっとスクロールでトップへもどる
-	    topBtn.click(function () {
-	        $('body,html').animate({
-	            scrollTop: 0
-	        }, 500);
-	        return false;
-	    });
-	});
+$(function () {
+    var topBtn = $('#page-top-btn');
+    //スルスルっとスクロールでトップへもどる
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
