@@ -27,8 +27,9 @@ $(function() {
 
   // ページトップ
   var topBtn = $("#page-top-btn");
+    console.log(topBtn);
   //スルスルっとスクロールでトップへもどる
-  $("#page-top-btn").on("click", function(){
+  topBtn.click(function () {
       $('body,html').animate({
           scrollTop: 0
       }, 500);

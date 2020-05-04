@@ -316,13 +316,14 @@
 		　});
 		});
 		$(function(){
-		//スルスルっとスクロールでトップへもどる
-		$("#page-top-btn").on("click", function(){
-				$('body,html').animate({
-						scrollTop: 0
-				}, 500);
-				return false;
-		});
+			var topBtn = $("#page-top-btn");
+			//スルスルっとスクロールでトップへもどる
+			topBtn.click(function () {
+		      $('body,html').animate({
+		          scrollTop: 0
+		      }, 500);
+		      return false;
+		  });
 		});
 		</script>
 	</body>
