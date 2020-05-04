@@ -1,8 +1,8 @@
 //共通パーツ読み込み
 $(function() {
-  
-  // $("#header").load("parts/header.html");
-  $("#footer").load("parts/footer.html");
+
+　$("#header").load("parts/header.html");
+　$("#footer").load("parts/footer.html");
 
   // グローバルメニュー
   $(".btn-gnavi").on("click", function(){
@@ -26,9 +26,9 @@ $(function() {
   });
 
   // ページトップ
-  var topBtn = $('#page-top-btn');
+  var topBtn = $("#page-top-btn");
   //スルスルっとスクロールでトップへもどる
-  topBtn.click(function () {
+  $("#page-top-btn").on("click", function(){
       $('body,html').animate({
           scrollTop: 0
       }, 500);
