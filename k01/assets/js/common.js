@@ -15,13 +15,13 @@ $(window).on("load", function() {
       $("#global-navi").stop().animate({
           right: rightVal
       }, 200);
-    });
-    $('.menu a[href]').on('click', function(event) {
-    $('.btn-gnavi').trigger('click');
+  });
+  $(document).on("click", ".menu a[href]", function(event){
+      $('.btn-gnavi').trigger('click');
   });
 
   // ページトップ
-  //スルスルっとスクロールでトップへもどる
+  //スクロールでトップへもどる
   $(document).on("click", "#page-top-btn", function(){
       $('body,html').animate({
           scrollTop: 0
