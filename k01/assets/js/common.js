@@ -1,6 +1,6 @@
 $(window).on("load", function() {
   // グローバルメニュー
-  $(".btn-gnavi").on("click", function(){
+  $(document).on("click", ".btn-gnavi", function(){
       // ハンバーガーメニューの位置を設定
       var rightVal = 0;
       if($(this).hasClass("open")) {
@@ -21,9 +21,8 @@ $(window).on("load", function() {
   });
 
   // ページトップ
-  var topBtn = $('#page-top-btn');
   //スルスルっとスクロールでトップへもどる
-  topBtn.click(function () {
+  $(document).on("click", "#page-top-btn", function(){
       $('body,html').animate({
           scrollTop: 0
       }, 500);
