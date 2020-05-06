@@ -24,24 +24,22 @@ $(window).on("load", function() {
   }, times);
 
   // スクロール時アクション
-  $(function(){
-  　$(window).scroll(function (){
-      $('.yajirushi').each(function(){
-          var elemPos = $(this).offset().top;
-          var scroll = $(window).scrollTop();
-          var windowHeight = $(window).height();
-          if (scroll > elemPos - windowHeight){
-              $(this).addClass('scroll_view');
-          }
-      });
-      $('.sm_yajirushi').each(function(){
-          var elemPos = $(this).offset().top;
-          var scroll = $(window).scrollTop();
-          var windowHeight = $(window).height();
-          if (scroll > elemPos - windowHeight){
-              $(this).addClass('scroll_view');
-          }
-      });
-  　});
-  });
+　$(window).scroll(function (){
+    $('.yajirushi').each(function(){
+        var elemPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight){
+            $(this).addClass('scroll_view');
+        }
+    });
+    $('.sm_yajirushi').each(function(){
+        var elemPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight){
+            $(this).addClass('scroll_view');
+        }
+    });
+　});
 });

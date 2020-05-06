@@ -285,8 +285,17 @@
 	padding-bottom: 25px;
 	padding-left: 15px;
 }
-.contents-news-img {
-  padding: 0px 10px 0px 10px;
+.news-category {
+	background-color: #928e8e;
+	color: #ffffff;
+	margin: 10px;
+	font-size: 14px;
+  padding: 3px 10px;
+}
+.news-category-main {
+  margin: 10px;
+	font-size: 20px;
+  padding: 3px 10px;
 }
 .news-title {
   display: table-cell;
