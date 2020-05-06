@@ -85,7 +85,6 @@
   transform: translateX(50%);
   right: 50%;
 	writing-mode: vertical-rl;
-	padding-top: 20px;
   padding-left: 85px;
 	margin: 0 auto;
 }
@@ -111,7 +110,7 @@
   position: absolute;
   transform: translateX(50%);
   right: 50%;
-  top: 55%;
+  top: 58%;
 	height: auto;
 	width: 100%;
 	margin: 0 auto;
@@ -131,7 +130,7 @@
   position: absolute;
   transform: translateX(50%);
   right: 50%;
-  top: 63%;
+  top: 65%;
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
@@ -337,9 +336,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  /*1色パターン：border-rightだけに色指定*/
   border-top: 25px solid transparent;
-  border-right: 50px solid #928e8e;
+  border-right: 50px solid #99b27f;
 }
 .btn:hover {
 	opacity: 1;
@@ -471,7 +469,7 @@
 
 /* フッター */
 footer {
-	background-color: gray;
+	background-color: #734444;
 	color: white;
 	text-align: center;
   margin: 0 auto;
