@@ -294,16 +294,25 @@
 	padding-left: 15px;
 }
 .news-category {
-	background-color: #928e8e;
+	display: inline-block;
 	color: #ffffff;
 	margin: 10px;
 	font-size: 14px;
-  padding: 3px 10px;
+	width: 75px;
+	text-align: center;
 }
 .news-category-main {
-  margin: 10px;
+  width: 85px;
 	font-size: 20px;
-  padding: 3px 10px;
+}
+.news-category-information {
+	background-color: #ec582f;
+}
+.news-category-other {
+	background-color: #b87819;
+}
+.news-category-suspension {
+	background-color: #4b4bb2;
 }
 .news-title {
   display: table-cell;
