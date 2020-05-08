@@ -171,30 +171,39 @@
 .item-main-image {
   width: 100%;
 }
-.contents-item p {
-  margin-bottom: 50px;
+.item-body p {
+	text-align: left;
+	font-size: 20px;
 }
 .contents-item {
+  writing-mode: vertical-rl;
   position: relative;
-	writing-mode: vertical-rl;
-	/* flex: auto; */
-	font-size: 20px;
   margin-right: 40px;
   margin-bottom: 30px;
+	width: 45%;
 }
 .contents-itemlist .contents-item a {
   display: block;
   position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .item-body {
   padding-left: 16px;
+	width: 10%;
 }
 .item-image {
   position: relative;
+	width: 90%;
+}
+.item-main-image {
+  position: relative;
+	width: 100%;
+}
+.item-main-image img{
+	width: 100%;
 }
 .yajirushi {
   position: absolute;
