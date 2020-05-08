@@ -4,9 +4,9 @@ $(window).on("load", function() {
   var times = 5000; // 画像切り替えの間隔（1000で1秒）
   var className = '.container-right';
   var bgArray = [
-    "assets/img/main_slide1.jpg",
-    "assets/img/main_slide2.jpg",
-    "assets/img/main_slide3.jpg"
+    "assets/img/main_slide_1.jpg",
+    "assets/img/main_slide_2.jpg",
+    "assets/img/main_slide_3.jpg"
   ];
   $.each(bgArray.reverse(), function(i, value) {
     $(className).prepend('<div class="slides" style="background-image:url(' + value + ');"></div>');
