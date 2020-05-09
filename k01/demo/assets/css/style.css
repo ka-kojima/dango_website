@@ -388,10 +388,11 @@
 
 /* コンテンツヘッダー */
 .contents-header {
-  width: 100px;
+  width: 80px;
   padding-top: 20px;
   padding-bottom: 8px;
   text-align: center;
+	margin: 0 auto;
 }
 
 /* 商品詳細 */
