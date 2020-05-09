@@ -385,12 +385,9 @@
 	opacity: 1;
 }
 
-
 /* コンテンツヘッダー */
 .contents-header {
-  /* height: 100px; */
   padding-top: 20px;
-  /* padding-bottom: 8px; */
   text-align: center;
 }
 
