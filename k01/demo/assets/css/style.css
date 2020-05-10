@@ -871,8 +871,8 @@ footer {
   #wrapper nav {
     position: fixed;
     top: 0;
-    right: -300px;
-    width: 300px;
+    right: -250px;
+    width: 250px;
     height: 100%;
     padding-top: 50px;
     background: #333;
@@ -888,10 +888,10 @@ footer {
       text-decoration: none;
       color: #ddd
   }
-	.sns img{
+	#wrapper nav　.sns img{
 		width: 35px;
 	}
-	.sns li {
+	#wrapper nav　.sns li {
 		float: right;
 		padding: 10px 10px
 	}
