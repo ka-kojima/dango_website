@@ -892,6 +892,7 @@ footer {
 		width: 35px;
 	}
 	.sns li {
+		display:block;
 		float: right;
 		padding-right: 5px;
 		padding-left: 5px;
