@@ -893,6 +893,7 @@ footer {
 	}
 	.sns li {
 		float: right;
+		padding: 10px 10px
 	}
   #wrapper .btn-gnavi {
       position: fixed;
