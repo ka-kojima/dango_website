@@ -888,9 +888,6 @@ footer {
     text-decoration: none;
     color: #ddd
   }
-	.sns {
-		width: 100%;
-	}
 	.sns img{
 		width: 35px;
 	}
@@ -898,8 +895,7 @@ footer {
 		display:block;
 		float: left;
 		padding-top: 20px;
-		padding-right: 10px;
-		padding-left: 10px;
+		padding-left: 20px;
 		text-align: center;
 	}
   #wrapper .btn-gnavi {
