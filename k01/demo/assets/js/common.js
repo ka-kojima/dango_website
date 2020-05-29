@@ -18,7 +18,7 @@ $(window).on("load", function() {
   });
 
   // ナビの範囲外のどこかをクリックしたときに発動
-  $(document).on('click', "main", function () {
+  $(document).on('click', ".header-main,.contents-header,main", function () {
       if ($('#global-navi').is(':visible')) {
           // ナビが表示されていたらclose
           // 位置を移動させメニューを開いた状態にする
