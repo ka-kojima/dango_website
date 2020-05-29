@@ -27,7 +27,7 @@ $(window).on("load", function() {
           // 位置を移動させメニューを開いた状態にする
           var rightVal = -300;
           // メニューを開いたら次回クリック時は閉じた状態になるよう設定
-          $(this).removeClass("open");
+          $(".btn-gnavi").removeClass("open");
           $("#global-navi").stop().animate({
               right: rightVal
           }, 200);
