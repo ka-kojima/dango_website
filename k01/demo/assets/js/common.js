@@ -6,12 +6,9 @@ $(window).on("load", function() {
       if($(this).hasClass("open")) {
           // 位置を移動させメニューを開いた状態にする
           rightVal = -300;
-          // メニューを開いたら次回クリック時は閉じた状態になるよう設定
-          $(this).removeClass("open");
-      } else {
-          // メニューを開いたら次回クリック時は閉じた状態になるよう設定
-          $(this).addClass("open");
       }
+      // メニューを開いたら次回クリック時は閉じた状態になるよう設定
+      $(this).toggleClass("open");
       $("#global-navi").stop().animate({
           right: rightVal
       }, 200);
@@ -27,7 +24,7 @@ $(window).on("load", function() {
           // 位置を移動させメニューを開いた状態にする
           var rightVal = -300;
           // メニューを開いたら次回クリック時は閉じた状態になるよう設定
-          $(".btn-gnavi").removeClass("open");
+          $(".btn-gnavi p").toggleClass("open");
           $("#global-navi").stop().animate({
               right: rightVal
           }, 200);
