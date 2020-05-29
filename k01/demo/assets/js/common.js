@@ -20,6 +20,19 @@ $(window).on("load", function() {
       $('.btn-gnavi').trigger('click');
   });
 
+  // ナビの範囲外のどこかをクリックしたときに発動
+  $(document).on('click', "body", function () {
+      if ($('#global-navi').is(':visible')) {
+          // ナビが表示されていたらclose
+          $("#global-navi").stop().animate({
+              right: rightVal
+          }, 200);
+      } else {
+          // ナビが非表示の場合は起動しない
+          event.stopPropagation();
+      }
+  });
+
   // ページトップ
   //スクロールでトップへもどる
   $(document).on("click", "#page-top-btn", function(){
