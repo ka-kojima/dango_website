@@ -868,7 +868,7 @@ footer {
     background:#333;
     font-size: 16px;
     box-sizing: border-box;
-    z-index: 3
+    z-index: 10;
   }
 	.menu li {
 		display:block;
