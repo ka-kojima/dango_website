@@ -757,34 +757,34 @@ footer {
     float: left;
   }
 
-    /* お知らせ一覧 */　
-    .contents-newsalllist {
-      width: 100%;
-    }
-    .news-detail-list {
-      width: 100%;
-      padding: 0px;
-    }
-    .contents-newsalllist h2{
-      display: block;
-    }
-    /* お知らせ一覧 ページャー */
-    .pager .pagination {
-       text-align: center;
-       padding-bottom: 0px;
-    }
-    .pager .pagination li.pre,
-    .pager .pagination li.next{
-      display: inline-block;
-      width: 15%;
-      height: 50px;
-      text-align: center;
-    }
-    .pager .pagination li.pre a,
-    .pager .pagination li.next a{
-      width: 100%;
-      text-align: center;
-    }
+  /* お知らせ一覧 */　
+  .contents-newsalllist {
+    width: 100%;
+  }
+  .news-detail-list {
+    width: 100%;
+    padding: 0px;
+  }
+  .contents-newsalllist h2{
+    display: block;
+  }
+  /* お知らせ一覧 ページャー */
+  .pager .pagination {
+     text-align: center;
+     padding-bottom: 0px;
+  }
+  .pager .pagination li.pre,
+  .pager .pagination li.next{
+    display: inline-block;
+    width: 15%;
+    height: 50px;
+    text-align: center;
+  }
+  .pager .pagination li.pre a,
+  .pager .pagination li.next a{
+    width: 100%;
+    text-align: center;
+  }
 
   /* お知らせ詳細 */
   .contents-newsdetail {
@@ -868,7 +868,7 @@ footer {
     background:#333;
     font-size: 16px;
     box-sizing: border-box;
-    z-index: 2
+    z-index: 3
   }
 	.menu li {
 		display:block;
