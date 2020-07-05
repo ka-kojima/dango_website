@@ -28,7 +28,7 @@ $(window).on("load", function() {
           $("#global-navi").stop().animate({
               right: rightVal
           }, 200);
-      } else {console.log('test2');
+      } else {
           // ナビが非表示の場合は起動しない
           event.stopPropagation();
       }
